@@ -4,3 +4,5 @@ if(!require(installr)) {
 }
 
 install.R()
+
+update.packages() # 기존 라이브러리 업데이트
