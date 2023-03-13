@@ -1,13 +1,13 @@
-/*result window clear(Ã¢ Á¤¸®)*/
+/*result window clear(ì°½ ì •ë¦¬)*/
 ods html newfile = print;
 
 
-/*µ¥ÀÌÅÍ¿¡ ¶ç¾î¾²±â or ; Ã³¸® ÇÊ¿ä*/
+/*ë°ì´í„°ì— ë„ì–´ì“°ê¸° or ; ì²˜ë¦¬ í•„ìš”*/
 data club_misc;
 input id name $ team$ strtwght endwght misc;
 cards;
 1023 David Shaw red 189 165 ;
-1049 Amelia Serrano yello . 124 .
+1049 Amelia Serrano yellow . 124 .
 1219 Alan Nance red 210 192 .
 1246 Ravi Sinha yellow 194 . .
 1078 Ashley McKnight red 127 118 ;
@@ -18,9 +18,9 @@ proc print data = club_misc;
 run;
 
 
-/*±âº» 8¹ÙÀÌÆ® ÇÒ´ç*/
+/*ê¸°ë³¸ 8ë°”ì´íŠ¸ í• ë‹¹*/
 data club_temp;
-input id name $ team$ strtwght endwght;
+input id name $ team $ strtwght endwght;
 cards;
 1023 DavidShaw red 189 165 .
 run;
@@ -29,7 +29,7 @@ proc print data = club_temp;
 run;
 
 
-/*º¯¼ö ¿ë·® ÁöÁ¤*/
+/*ë³€ìˆ˜ ìš©ëŸ‰ ì§€ì •*/
 data club_temp;
 input id name $ 6-14 team$ strtwght endwght;
 cards;
@@ -40,11 +40,11 @@ proc print data = club_temp;
 run;
 
 
-/*ºóÄ­À¸·Î ¿­ ¸ÂÃß±â*/
+/*ë¹ˆì¹¸ìœ¼ë¡œ ì—´ ë§ì¶”ê¸°*/
 data club_temp2;
 input id name $ 6-19 team $ 21-26 strtwght endwght;
 cards;
-1023 David Shaw       red 189 165
+1023 David Shaw      red    189 165
 1049 Amelia Serrano yellow . 124
 run;
 
@@ -52,7 +52,7 @@ proc print data = club_temp2;
 run;
 
 
-/*ÀÚ·á ±¸ºĞ(¿­ ¹øÈ£)*/
+/*ìë£Œ êµ¬ë¶„(ì—´ ë²ˆí˜¸)*/
 data club_temp2;
 input id 1-4 name $ 6-19 team $ 21-26 strtwght 28-30 endwght 32-34;
 cards;
@@ -64,7 +64,7 @@ proc print data = club_temp2;
 run;
 
 
-/*'.'°ú ¾Æ¹«°Íµµ ¾øÀ» ¶§ ºñ±³*/
+/*'.'ê³¼ ì•„ë¬´ê²ƒë„ ì—†ì„ ë•Œ ë¹„êµ*/
 data club_temp;
 input id name $ team $ strtwght endwght;
 cards;
@@ -86,9 +86,9 @@ proc print data = club_temp;
 run;
 
 
-/*cards¿Í cards4*/
+/*cardsì™€ cards4*/
 data club_temp;
-input id name $ team $ strtwght 15-16 endwght;
+input id name $ team $ strtwght endwght;
 cards;
 1023 David red 189 165
 ;
@@ -98,7 +98,7 @@ proc print data = club_temp;
 run;
 
 data club_temp;
-input id name $ team $ strtwght 15-16 endwght;
+input id name $ team $ strtwght endwght;
 cards4;
 1023 David red 189 165
 ;;;;
@@ -108,7 +108,7 @@ proc print data = club_temp;
 run;
 
 
-/*';' Æ÷ÇÔ ÀÚ·á*/
+/*';' í¬í•¨ ìë£Œ*/
 data club_temp;
 input id name $ team $ strtwght endwght misc $;
 cards;
@@ -130,6 +130,7 @@ proc print data = club_temp;
 run;
 
 
+/* line 5 ì½”ë“œ í•´ê²° */
 data club_misc;
 input id name $ 6-20 team $ 22-27 strtwght endwght misc $;
 cards4;
@@ -145,7 +146,7 @@ proc print data = club_misc;
 run;
 
 
-/*°á°úÃ¢¿¡ Á¦¸ñ(title) ºÎ¿©*/
+/*ê²°ê³¼ì°½ì— ì œëª©(title) ë¶€ì—¬*/
 data club;
 input id name $ 6-20 team $ 22-27 strtwght endwght misc $;
 cards4;
@@ -170,7 +171,7 @@ title2 'Team red and team yellow';
 run;
 
 
-/*ÀÏºÎ º¯¼ö¸¸ print*/
+/*ì¼ë¶€ ë³€ìˆ˜ë§Œ print*/
 proc print data = club;
 var name strtwght endwght;
 run;
@@ -209,7 +210,7 @@ title 'Mean Starting Weight/Ending Weight/Weight Loss';
 run;
 
 
-/*¿É¼Ç °üÂû = > 1¹ø¸¸ µ¹¾Æ°¨*/
+/*ì˜µì…˜ ê´€ì°° = > 1ë²ˆë§Œ ëŒì•„ê°*/
 proc tabulate data = club;
 class team;
 var strtwght endwght loss;
