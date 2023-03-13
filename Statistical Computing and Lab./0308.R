@@ -1,4 +1,6 @@
 # 카이제곱 검정
+rm(list = ls())
+
 chi2.gof <- function(U, k) {
   n <- (1:k) / k
   X <- rep(0, k)
@@ -22,8 +24,10 @@ X <- rchisq(1000, 3)
 X <- X / max(X)
 chi2.gof(X, 10)
 
+
 # 콜모고로프-스미르노프 검정
 ks.test(U, 'punif')
+
 
 # 독립성 검정: Run 검정
 if(!require(randtests)) {
@@ -33,7 +37,10 @@ if(!require(randtests)) {
 
 runs.test(U)
 
+
 # 예제 3.3
+rm(list = ls())
+
 k <- 0
 n <- 1000
 
@@ -51,7 +58,7 @@ for (i in 1:n) {
 
 k / n
 
-# 예제 3.3
+# 예제 3.3(함수 정의)
 sim.Q1 <- function(n, r) {
   k <- 0
   
