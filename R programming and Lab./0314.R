@@ -40,7 +40,7 @@ s1 = sqrt(v1); s1 # 표준편차
 
 # 연습3
 set.seed(123)
-x = 3 * rnorm(1000) + 10 # 평균이 10이고 표준편차가 3인 1000개의 난수
+x = 3 * rnorm(1000) + 10 # 평균이 10이고 표준편차가 3인 정규분포를 따르는 1000개의 난수
 sum(x); mean(x); var(x); sd(x)
 
 sum1 = 0; sum2 = 0
@@ -59,11 +59,18 @@ while (n <= 100) {
 n = n + 1
 sum = sum + n
 }
-n; sum
+n; sum # 101까지 더한 결과
+
+n = 0; sum = 0
+while (n < 100) {
+  n = n + 1
+  sum = sum + n
+}
+n; sum # 100까지 더한 결과
 
 # 연습4
 n = 99; sum = 0
-while (n <= 199) {
+while (n < 200) {
 n = n + 1
 sum = sum + n
 }
@@ -71,7 +78,7 @@ n; sum
 
 # 연습5
 n = 0; answer = 1
-while (n <= 99) {
+while (n < 100) {
 n = n + 1
 answer = answer * n
 }
@@ -132,7 +139,7 @@ s1 = sqrt(v1); s1
 
 # 연습8
 set.seed(123)
-x = 3 * rnorm(1000) + 10 # 평균이 10이고 표준편차가 3인 1000개의 난수
+x = 3 * rnorm(1000) + 10 # 평균이 10이고 표준편차가 3인 정규분포를 따르는 1000개의 난수
 sum(x); mean(x); var(x); sd(x)
 
 n = 0; sum1 = 0; sum2 = 0;
@@ -222,7 +229,7 @@ s1 = sqrt(v1); s1
 
 # 연습13
 set.seed(123)
-x = 3 * rnorm(1000) + 10 # 평균이 10이고 표준편차가 3인 1000개의 난수
+x = 3 * rnorm(1000) + 10 # 평균이 10이고 표준편차가 3인 정규분포를 따르는 1000개의 난수
 sum(x); mean(x); var(x); sd(x)
 
 n = 0; sum1 = 0; sum2 = 0;
