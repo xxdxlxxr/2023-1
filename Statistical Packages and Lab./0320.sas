@@ -1,8 +1,3 @@
-/*°úÁ¦ Ç®ÀÌ*/
-/*data mydata;*/
-/*input country : $12. tourtype : $12. nights landcost vendor $ @@;*/
-
-
 data type;
 input country $ tourtype $ nights landcost vendor $ @@;
 cards;
@@ -19,7 +14,7 @@ title type;
 run;
 
 
-/*proc sort ¿¹Á¦1*/
+/*proc sort ì˜ˆì œ1*/
 proc sort data = type out = type_sort_ctry;
 by country;
 run;
@@ -29,7 +24,7 @@ title type_sort ctry;
 run;
 
 
-/*proc sort ¿¹Á¦2*/
+/*proc sort ì˜ˆì œ2*/
 proc sort data = type out = type_sort_ldcst;
 by landcost;
 run;
@@ -39,7 +34,7 @@ title type_sort_ldcst;
 run;
 
 
-/*proc sort ³»¸²Â÷¼ø ¿¹Á¦1*/
+/*proc sort ë‚´ë¦¼ì°¨ìˆœ ì˜ˆì œ1*/
 proc sort data = type out = type_sort_ctry_d;
 by descending country;
 run;
@@ -49,7 +44,7 @@ title type_sort ctry_d;
 run;
 
 
-/*proc sort ³»¸²Â÷¼ø ¿¹Á¦2*/
+/*proc sort ë‚´ë¦¼ì°¨ìˆœ ì˜ˆì œ2*/
 proc sort data = type out = type_sort_ldcst_d;
 by descending landcost;
 run;
@@ -59,7 +54,7 @@ title type_sort_ldcst_d;
 run;
 
 
-/*more than one variable µÑ ´Ù ¿À¸§Â÷¼ø*/
+/*more than one variable ë‘˜ ë‹¤ ì˜¤ë¦„ì°¨ìˆœ*/
 proc sort data = type out = type_sort_trtp_nght;
 by tourtype nights;
 run;
@@ -69,7 +64,7 @@ title type_sort_trtp_nght;
 run;
 
 
-/*ÇÏ³ª´Â ¿À¸§Â÷¼ø ÇÏ³ª´Â ³»¸²Â÷¼ø*/
+/*í•˜ë‚˜ëŠ” ì˜¤ë¦„ì°¨ìˆœ í•˜ë‚˜ëŠ” ë‚´ë¦¼ì°¨ìˆœ*/
 proc sort data = type out = type_sort;
 by tourtype descending nights;
 run;
@@ -79,7 +74,7 @@ title type_sort;
 run;
 
 
-/*more than one variable µÑ ´Ù ³»¸²Â÷¼ø*/
+/*more than one variable ë‘˜ ë‹¤ ë‚´ë¦¼ì°¨ìˆœ*/
 proc sort data = type out = type_sort_trtp_nght_d;
 by descending tourtype descending nights;
 run;
@@ -89,7 +84,7 @@ title type_sort_trtp_nght_d;
 run;
 
 
-/*´ë¼Ò¹®ÀÚ Á¤·Ä*/
+/*ëŒ€ì†Œë¬¸ì ì •ë ¬*/
 data type_capital;
 input country $ tourtype $ nights landcost vendor $ @@;
 cards;
@@ -122,7 +117,7 @@ Korea architecture 5 456 Express
 ;
 run;
 
-/*nodupkey*/
+/*nodupkey : íŠ¹ì • ë³€ìˆ˜ì˜ ê°’ ì¤‘ë³µ ì œê±°*/
 proc sort data = type out = type_sort1 nodupkey;
 by tourtype;
 run;
@@ -132,7 +127,7 @@ title type_sort1;
 run;
 
 
-/*nodup*/
+/*nodup = noduplicates : ëª¨ë“  ë³€ìˆ˜ê°€ ë™ì¼í•œ ê´€ì°°ê°’ ì œê±°*/
 proc sort data = type out = type_sort2 nodup;
 by tourtype;
 run;
@@ -142,7 +137,7 @@ title type_sort2;
 run;
 
 
-/*first/last(sort ¸ÕÀú)*/
+/*first/last(sort ë¨¼ì €)*/
 proc sort data = type out = type_sort3;
 by tourtype landcost;
 run;
@@ -159,5 +154,6 @@ tour_last = last.tourtype;
 run;
 
 proc print data = type_sort_opt;
+var country tourtype tour_first tour_last;
 title type_sort_opt;
 run;
