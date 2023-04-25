@@ -95,7 +95,7 @@ curve(dnorm(x, bn[i] * p, sqrt(bn[i] * p * (1 - p))), add = T)
 }
 
 
-# 실습4
+# 실습3
 n = 100; p = .5
 par(mfrow = c(2, 3))
 bn = c(5, 10, 15, 30, 50, 1000)
