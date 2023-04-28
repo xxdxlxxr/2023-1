@@ -1,6 +1,5 @@
 proc sql;
 
-
 select *, length1 + length2 as SUMLENGTH12
 	from sashelp.fish;
 
