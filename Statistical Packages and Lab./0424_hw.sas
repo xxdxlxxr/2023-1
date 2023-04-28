@@ -6,8 +6,7 @@ create table MYTABLE (
 	height num,
 	weight num,
 	misc char
-	)
-;
+);
 
 insert into mytable
 	values ('Kim Minsu', 'male', 170, ., 'missing;')
@@ -15,6 +14,9 @@ insert into mytable
 	values ('Park Younghee', 'female', 160, 50, '')
 ;
 
-select *, 703 * weight / height ** 2 as BMI
+create table MYTABLE2 as
+	select *, 703 * weight / height ** 2 as BMI
 	from mytable
 	order by sex, height desc;
+
+select * from mytable2;
