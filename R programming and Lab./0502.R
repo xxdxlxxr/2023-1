@@ -13,7 +13,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n')
 
@@ -39,7 +39,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n\n')
 
@@ -63,7 +63,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n')
 
@@ -85,7 +85,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n')
 
@@ -111,7 +111,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n\n')
 
@@ -135,7 +135,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n')
 
@@ -188,7 +188,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n')
 
@@ -214,7 +214,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n\n')
 
@@ -238,7 +238,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n')
 
@@ -264,7 +264,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n\n')
 
@@ -293,7 +293,7 @@ xbar[i] = mean(x)
 xbar_mu = mean(xbar)
 xbar_var = var(xbar)
 
-cat('표본이 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
+cat('표본의 개수 = ', n, ', 자료 set의 개수 = ', m, '\n',
 '모평균 = ', mu, ', 표본평균의 평균 = ', xbar_mu, '\n',
 '모분산 = ', var, ', var / n = ', var / n, ', 표본평균의 분산 = ', xbar_var, '\n\n')
 
